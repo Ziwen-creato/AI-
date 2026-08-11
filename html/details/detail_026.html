@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Show HN: CtxRay – see and lock what Codex loads before a task</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:#334155;padding:16px;max-width:700px;margin:0 auto}h1{font-size:20px;color:#1e293b;margin:16px 0 12px;line-height:1.5}.meta{font-size:12px;color:#94a3b8;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e2e8f0}.meta span{margin-right:16px}.back{display:inline-block;margin-top:24px;color:#3b82f6;text-decoration:none;font-size:14px}.source{margin-top:8px;font-size:12px;color:#cbd5e1}.source a{color:#94a3b8;word-break:break-all}</style>
+</head>
+<body>
+<h1>Show HN: CtxRay – see and lock what Codex loads before a task</h1>
+<div class="meta"><span>Github.com</span><span>2026-08-10</span><span>生成于 2026-08-11 16:56</span></div>
+<div class="content"><p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The local-first observability and control layer for OpenAI Codex.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Audit context, compile intentional profiles, catch configuration drift, and attach honest usage receipts.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">CtxRay is a local-first CLI and Codex plugin for context diagnostics, safe</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">profile compilation, drift detection, reproducibility lockfiles, and honest</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">post-turn usage receipts. It calls no model of its own, requires no API key,</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">and has no telemetry.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Community project. Not affiliated with or endorsed by OpenAI.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The demo uses the public benchmark and the shipped CLI behavior. Click it for</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">the compact MP4, or use the square social cut.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The first public microbenchmark ran 10 paired tasks across requested GPT-5.6</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Luna, Terra, and Sol profiles: 20/20 answers passed the same exact validator.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Removing irrelevant discovered context reduced the estimated model-visible</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">prompt by 73.3% and exact aggregate turn tokens by 29.1%. Every pair</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">holds task, requested model, effort, sandbox, commit, and quality gate constant.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">These are bounded microbenchmark results, not a universal productivity claim.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The runtime stream records the requested profile but does not independently</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">attest the served model, and prompt size remains a character-based estimate.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Read the method and limitations,</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">inspect the machine-readable summary,</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">or watch the 20-second MP4.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">A second maintainer run measured a conservative 28.5% exact aggregate</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">reduction across nine comparable pairs and exposed a stale package-name</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">validator. The raw repeat run and erratum</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">are public; it is evidence of repeatability and fixture hardening, not an</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">independent community reproduction.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Codex already exposes excellent runtime primitives such as /status, /usage,</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">/statusline, codex exec --json, profile files, and the app-server. The hard</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">part is connecting them into one answer:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">CtxRay does that glue work without becoming another chat wrapper.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The dollar display is deliberately asymmetric:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">CtxRay never calls included subscription usage “money spent”. OpenAI states</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">that ChatGPT credits have no cash value, so CtxRay does not invent a universal</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">credit-to-dollar conversion. See Cost semantics.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Requires Node.js 20 or newer and a working Codex CLI installation.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">If ctxray doctor reports that Codex is unavailable, install the official CLI</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">with npm install --global @openai/codex. On Windows, do not rely on directly</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">executing the private binary inside the packaged desktop app. CtxRay detects the</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">public npm launcher automatically.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">GitHub renders the generated Mermaid file locally. Labels contain only the</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">metadata already returned by audit, not prompt text or config values. The</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">headline is a known startup estimate: AGENTS.md text and skill discovery</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">metadata are counted; configuration files are marked as metadata, not falsely</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">treated as prompt text.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">For a subscription-only API comparison, opt in explicitly:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">--prompt-xray asks Codex&#x27;s experimental local debug command to render the</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">model-visible input before the turn; CtxRay converts its character count into</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">an explicitly estimated token value. The consumed input/output counters come</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">separately from turn.completed and may aggregate several model calls. The</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">footer itself is rendered locally after completion and consumes no model</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">tokens.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Capture the experimental Codex diagnostic, then analyze the saved JSON:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">CtxRay reports role counts, characters, and explicitly estimated tokens. It</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">does not include prompt text in its report.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The second command stages files under .ctxray/profiles. Installing into</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">CODEX_HOME is a separate, explicit action:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Existing profiles are copied to ~/.codex/.ctxray-backups/&lt;timestamp&gt;/ first.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Create a private, redacted baseline, then compare it with the live setup:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The last command exits with status 2 when a skill, instruction, profile, or</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">plugin surface was added, removed, or changed, making it suitable for CI. For a</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">fully offline comparison between saved files, use</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">ctxray drift baseline.json --current current.json.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The lockfile contains hashes and relative paths, not prompt history. Secret-like</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">config values and all MCP environment values are redacted before hashing.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The repository includes a validated marketplace and plugin bundle:</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Restart the ChatGPT desktop app, open the Plugins Directory, select the CtxRay</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">marketplace, and install CtxRay. After the repository is public, the same</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">marketplace can be added using its GitHub owner/repository shorthand.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The bundled $ctxray skill has implicit invocation disabled. Its instructions</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">are loaded only when the user explicitly invokes it.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Claims about savings require comparable tasks that pass the same quality gate.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">CtxRay does not translate token estimates into a weekly allowance when Codex</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">does not expose that conversion.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">The test suite includes unit, integration, and process-level CLI tests. Coverage</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">thresholds are at least 80% for statements, branches, functions, and lines. See</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">the v0.1 TDD evidence.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Read CONTRIBUTING.md, SECURITY.md, and the</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">roadmap before opening a substantial change. Efficiency</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">claims follow the public evaluation plan.</p>
+<p style="font-size:15px;color:#334155;line-height:1.9;margin:12px 0;">Apache-2.0. See LICENSE and NOTICE.</p>
+</div>
+<div class="source">来源：<a href="https://github.com/FramY2/ctxray">查看原文</a></div>
+<a href="javascript:history.back()" class="back">&larr; 返回</a>
+</body>
+</html>
