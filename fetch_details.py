@@ -132,10 +132,10 @@ def gen_page(title, source_url, region, pubdate, cn_text, images, en_text=''):
     now = datetime.now().strftime('%Y-%m-%d %H:%M')
     pub_str = (pubdate or '')[:19]
     img_html = ''
-    for img_url in images[:3]:
+    for img_url in images[:8]:
         clean_url = img_url.lstrip(':').strip()
         if clean_url.startswith('http'):
-            img_html += '<div style="margin:16px 0;text-align:center;"><img src="' + clean_url + '" style="max-width:100%;border-radius:8px;" alt="" onerror="this.style.display=\'none\'"/></div>\n'
+            img_html += '<div style="margin:12px 0;"><img src="' + clean_url + '" style="max-width:100%;border-radius:8px;margin-bottom:12px;" alt="" onerror="this.style.display=\'none\'"/></div>\n'
     paras = [p.strip() for p in cn_text.split('\n\n') if p.strip()]
     if len(paras) < 2:
         paras = [p.strip() for p in cn_text.split('\n') if p.strip() and len(p.strip()) > 15]
@@ -250,4 +250,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
