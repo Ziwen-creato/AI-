@@ -141,14 +141,14 @@ def gen_page(title, source_url, region, pubdate, cn_text, images, en_text=''):
         paras = [p.strip() for p in cn_text.split('\n') if p.strip() and len(p.strip()) > 15]
     p_html = ''
     for p in paras:
-        p_html += '<p style="font-size:16px;color:#334155;line-height:1.9;margin:14px 0;text-indent:2em;">' + escape(p) + '</p>\n'
+        p_html += '<p style="font-size:17px;color:#334155;line-height:2.0;margin:18px 0;">' + escape(p) + '</p>\n'
     if not p_html:
-        p_html = '<p style="font-size:16px;color:#334155;line-height:1.9;margin:14px 0;">' + escape(cn_text) + '</p>\n'
+        p_html = '<p style="font-size:17px;color:#334155;line-height:2.0;margin:18px 0;">' + escape(cn_text) + '</p>\n'
     en_section = ''
     if en_text and len(en_text.strip()) > 50:
         en_section = '<details style="margin-top:20px;padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;"><summary style="font-size:13px;color:#64748b;cursor:pointer;">英文原文</summary><p style="font-size:14px;color:#64748b;line-height:1.8;margin:10px 0 0;white-space:pre-wrap;">' + escape(en_text[:2000]) + '</p></details>\n'
     safe_url = escape(source_url, quote=True)
-    return '<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>' + escape(title) + '</title>\n<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:#334155;padding:16px;max-width:700px;margin:0 auto}h1{font-size:22px;color:#1e293b;margin:16px 0 8px;line-height:1.5}.meta{font-size:12px;color:#94a3b8;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}.meta span{margin-right:16px}.back{display:inline-block;margin-top:24px;color:#3b82f6;text-decoration:none;font-size:14px}.source{margin-top:16px;font-size:12px;color:#cbd5e1;padding-top:12px;border-top:1px solid #e2e8f0}.source a{color:#94a3b8;word-break:break-all}img{height:auto}</style>\n</head>\n<body>\n<h1>' + escape(title) + '</h1>\n<div class="meta"><span>' + region + '</span><span>' + pub_str + '</span><span>生成于 ' + now + '</span></div>\n' + img_html + '<div class="content">' + p_html + '</div>\n' + en_section + '<div class="source">原文来源：<a href="' + safe_url + '">查看原文</a></div>\n<a href="javascript:history.back()" class="back">&larr; 返回</a>\n</body>\n</html>'
+    return '<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>' + escape(title) + '</title>\n<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:#334155;padding:16px;max-width:700px;margin:0 auto}h1{font-size:24px;color:#1e293b;margin:16px 0 8px;line-height:1.6}.meta{font-size:12px;color:#94a3b8;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #e2e8f0}.meta span{margin-right:16px}.back{display:inline-block;margin-top:24px;color:#3b82f6;text-decoration:none;font-size:14px}.source{margin-top:16px;font-size:12px;color:#cbd5e1;padding-top:12px;border-top:1px solid #e2e8f0}.source a{color:#94a3b8;word-break:break-all}img{height:auto}</style>\n</head>\n<body>\n<h1>' + escape(title) + '</h1>\n<div class="meta"><span>' + region + '</span><span>' + pub_str + '</span><span>生成于 ' + now + '</span></div>\n' + img_html + '<div class="content">' + p_html + '</div>\n' + en_section + '<div class="source">原文来源：<a href="' + safe_url + '">查看原文</a></div>\n<a href="javascript:history.back()" class="back">&larr; 返回</a>\n</body>\n</html>'
 
 def main():
     fs = [f for f in os.listdir(SRC) if f.endswith('.md') and not f.startswith('~')]
@@ -250,3 +250,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
