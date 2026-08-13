@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人工智能赚钱日报</title>
+</head>
+<body style="margin:0;padding:0;background:#fff;">
+<section style="padding:10px 0;max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">
+<section style="text-align:center;padding:30px 16px 16px;">
+<h1 style="font-size:24px;font-weight:800;color:#1e293b;margin:0 0 8px;letter-spacing:1px;">人工智能赚钱日报</h1>
+<p style="font-size:13px;color:#94a3b8;margin:0;">2026-08-13 全球人工智能赚钱新闻</p>
+</section>
+<section style="text-align:center;padding:8px 16px 16px;">
+<span style="display:inline-block;background:#f1f5f9;border-radius:8px;padding:10px 24px;margin:4px 8px;"><b style="font-size:20px;color:#3b82f6;">20</b><br><span style="font-size:11px;color:#94a3b8;">总计</span></span>
+<span style="display:inline-block;background:#f1f5f9;border-radius:8px;padding:10px 24px;margin:4px 8px;"><b style="font-size:20px;color:#8b5cf6;">1</b><br><span style="font-size:11px;color:#94a3b8;">地区</span></span>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_000.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">美超微 的利润率反弹和乐观的前景缓解了投资者对 人工智能 服务器订单的疑虑</a>
+<a href="https://www.digitimes.com/news/a20260812VL200/supermicro-outlook-2027-revenue-recovery.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 09:23 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #f59e0b;">
+<span style="display:inline-block;background:#f59e0b;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">登记者科技新闻</span>
+<a href="details/detail_001.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">印度央行希望人工智能能够批准人类会拒绝的贷款</a>
+<a href="https://www.theregister.com/ai-and-ml/2026/08/12/indias-central-bank-wants-ai-to-approve-loans-that-humans-would-reject/5286572" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 09:18 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">英伟达</span>
+<a href="details/detail_002.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">英伟达 人工智能 工厂计算正在成为可投资的资产类别</a>
+<a href="https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 08:38 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #10b981;">
+<span style="display:inline-block;background:#10b981;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">活薄荷</span>
+<a href="details/detail_003.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">加速创投携5.5亿美元基金重返印度市场，押注人工智能引领的创业浪潮</a>
+<a href="https://www.livemint.com/companies/news/accel-returns-to-india-market-with-550-million-fund-bets-big-on-ai-11786426098370.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 08:30 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #06b6d4;">
+<span style="display:inline-block;background:#06b6d4;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">商业新闻聚合</span>
+<a href="details/detail_004.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">随着企业对人工智能自动化的需求飙升，快乐机器人 估值飙升至 12 亿美元</a>
+<a href="https://biztoc.com/x/d0c78de062aaf270" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 08:29 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_005.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">人工智能服务器追踪：川湖、广达和营邦引领7月增长</a>
+<a href="https://www.digitimes.com/news/a20260811VL208/revenue-growth-king-slide-aic-trends.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 08:06 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_006.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">随着旧晶圆厂价值的增加，面板制造商转向人工智能封装</a>
+<a href="https://www.digitimes.com/news/a20260811PD242/auo-innolux-packaging-panel-revenue.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 08:02 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_007.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">仁宝将人工智能服务器产能翻倍，目标到2027年占据30%至40%的收入份额</a>
+<a href="https://www.digitimes.com/news/a20260811PD246/compal-ai-server-manufacturing-revenue-capacity.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 08:01 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_008.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">联咏科技预计 2026 年第 3 季度的增长将取决于智能手机 显示驱动芯片 和 边缘人工智能 需求</a>
+<a href="https://www.digitimes.com/news/a20260807PD242/novatek-revenue-demand-smartphone-edge-ai.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 07:47 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #06b6d4;">
+<span style="display:inline-block;background:#06b6d4;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">金融邮报</span>
+<a href="details/detail_009.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">韩国主权财富基金将加入全球人工智能和机器人竞赛</a>
+<a href="https://financialpost.com/pmn/business-pmn/korea-sovereign-wealth-fund-to-join-global-race-for-ai-robotics" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 07:18 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">硅角新闻</span>
+<a href="details/detail_010.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">个性化人工智能初创公司 河流人工智能 从 英伟达、超威半导体 支持的财团筹集了 1.1 亿美元</a>
+<a href="https://siliconangle.com/2026/08/11/personalized-ai-startup-river-ai-raises-1-1b-consortium-backed-nvidia-amd/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 06:59 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #ef4444;">
+<span style="display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">加密货币简报</span>
+<a href="details/detail_011.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">随着人工智能基础设施需求激增，科瑞维夫 将 2026 财年销售指导提高至 124亿至132亿美元</a>
+<a href="https://cryptobriefing.com/coreweave-raises-fy2026-revenue-guidance/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 06:24 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #06b6d4;">
+<span style="display:inline-block;background:#06b6d4;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">商业新闻聚合</span>
+<a href="details/detail_012.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">马斯克：人工智能将超过 太空探索技术公司 所有其他收入</a>
+<a href="https://biztoc.com/x/a8961e93f617429b" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 06:13 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #06b6d4;">
+<span style="display:inline-block;background:#06b6d4;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">商业新闻聚合</span>
+<a href="details/detail_013.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">随着人工智能需求的增长，朗美通 的销售额增长了一倍多</a>
+<a href="https://biztoc.com/x/1240d8cf98917ce5" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 06:13 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #8b5cf6;">
+<span style="display:inline-block;background:#8b5cf6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">科技新闻社区</span>
+<a href="details/detail_014.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">科瑞维夫股价因财报显示强劲人工智能增长势头而飙升</a>
+<a href="https://slashdot.org/firehose.pl?op=view&amp;id=184932108" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 06:12 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #f59e0b;">
+<span style="display:inline-block;background:#f59e0b;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">共同梦想新闻</span>
+<a href="details/detail_015.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">同行评审的研究揭示了大型科技公司和大型石油公司如何“携手”从人工智能中获利</a>
+<a href="https://www.commondreams.org/news/ai-and-fossil-fuels" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 06:03 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #ef4444;">
+<span style="display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">加密货币简报</span>
+<a href="details/detail_016.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">人工智能需求激增，朗美通 销售额增长一倍多</a>
+<a href="https://cryptobriefing.com/lumentum-sales-double-ai-demand/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 05:55 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #06b6d4;">
+<span style="display:inline-block;background:#06b6d4;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">下一个网络</span>
+<a href="details/detail_017.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">人工智能 助长欺诈，加密货币冒充诈骗增长 1,400%</a>
+<a href="https://thenextweb.com/news/crypto-impersonation-scams-1400-percent-ai-deepfake-fraud" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 05:49 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #f59e0b;">
+<span style="display:inline-block;background:#f59e0b;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">加密石板</span>
+<a href="details/detail_018.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">比特币矿商 比特小鹿 解锁 10 亿美元现金，股东权益稀释高达 30%，以打造人工智能帝国</a>
+<a href="https://cryptoslate.com/bitcoin-miner-unlocks-a-1b-cash-tap-that-dilutes-shareholders-by-up-to-30-to-build-its-ai-empire/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 05:15 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #ef4444;">
+<span style="display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">加密货币简报</span>
+<a href="details/detail_019.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">人工智能支出担忧重燃，甲骨文股价下跌</a>
+<a href="https://cryptobriefing.com/oracle-stock-falls-ai-spending-concerns/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-12 04:43 | 🇺🇸美国</p>
+</section>
+<section style="text-align:center;padding:24px 16px;color:#cbd5e1;font-size:11px;">
+<p style="margin:0;">人工智能赚钱日报 · 新闻聚合接口 · 每日更新</p>
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人工智能赚钱日报</title>
+</head>
+<body style="margin:0;padding:0;background:#fff;">
+<section style="padding:10px 0;max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">
+<section style="text-align:center;padding:30px 16px 16px;">
+<h1 style="font-size:24px;font-weight:800;color:#1e293b;margin:0 0 8px;letter-spacing:1px;">人工智能赚钱日报</h1>
+<p style="font-size:13px;color:#94a3b8;margin:0;">2026-08-12 全球人工智能赚钱新闻</p>
+</section>
+<section style="text-align:center;padding:8px 16px 16px;">
+<span style="display:inline-block;background:#f1f5f9;border-radius:8px;padding:10px 24px;margin:4px 8px;"><b style="font-size:20px;color:#3b82f6;">5</b><br><span style="font-size:11px;color:#94a3b8;">总计</span></span>
+<span style="display:inline-block;background:#f1f5f9;border-radius:8px;padding:10px 24px;margin:4px 8px;"><b style="font-size:20px;color:#8b5cf6;">1</b><br><span style="font-size:11px;color:#94a3b8;">地区</span></span>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #f59e0b;">
+<span style="display:inline-block;background:#f59e0b;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_000.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">人工智能需求提振无源元件，国巨、华新七月销量创历史新高</a>
+<a href="https://www.digitimes.com/news/a20260811PD204/walsin-revenue-demand-passive-2026.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-11 10:55 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #f59e0b;">
+<span style="display:inline-block;background:#f59e0b;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">电子时报</span>
+<a href="details/detail_001.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">元山上半年销量保持稳定，科技推动人工智能液冷发展</a>
+<a href="https://www.digitimes.com/news/a20260811PD234/yen-sun-ai-liquid-cooling-revenue-shipments-2026.html" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-11 10:55 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">印度时报</span>
+<a href="details/detail_002.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">经济时报市场 智能讲座 |直接股票并不是全球投资的答案；基金中的基金更有意义：拉胡尔·贾因</a>
+<a href="https://economictimes.indiatimes.com/markets/expert-view/etmarkets-smart-talk-direct-stocks-are-not-the-answer-for-global-investing-fund-of-funds-makes-more-sense-rahul-jain/articleshow/133140595.cms" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-11 10:45 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #6366f1;">
+<span style="display:inline-block;background:#6366f1;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">币电报</span>
+<a href="details/detail_003.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">泰国实行 0% 加密税。 比特币红队被迫使用 中国人工智能：亚洲快报</a>
+<a href="https://cointelegraph.com/magazine/thailands-0-crypto-tax-bitcoin-red-team-forced-to-use-chinese-ai-asia-express" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-11 10:08 | 🇺🇸美国</p>
+</section>
+<section style="background:#f8fafc;border-radius:8px;padding:12px 14px;margin:8px 10px;border-left:3px solid #3b82f6;">
+<span style="display:inline-block;background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;">硅角新闻</span>
+<a href="details/detail_004.html" style="color:#334155;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;word-break:break-all;">英伟达向华尔街提供 5 万亿美元资金，推动全球人工智能基础设施建设</a>
+<a href="https://siliconangle.com/2026/08/10/nvidia-taps-wall-street-half-trillion-dollars-fuel-global-ai-infrastructure-buildout/" style="color:#94a3b8;text-decoration:none;font-size:11px;margin-left:4px;">&#8599;</a>
+<p style="font-size:10px;color:#cbd5e1;margin:4px 0 0;">2026-08-11 09:42 | 🇺🇸美国</p>
+</section>
+<section style="text-align:center;padding:24px 16px;color:#cbd5e1;font-size:11px;">
+<p style="margin:0;">人工智能赚钱日报 · 新闻聚合接口 · 每日更新</p>
+</section>
+</section>
+</body>
+</html>
