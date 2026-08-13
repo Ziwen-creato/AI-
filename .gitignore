@@ -1,6 +1,8 @@
-﻿html/
-__pycache__/
+﻿__pycache__/
 trafilatura_pkg/
 ai_reports/
 *.bat
 test_*
+
+
+
