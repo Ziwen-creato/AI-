@@ -218,14 +218,12 @@ source_colors = ["#3b82f6", "#8b5cf6", "#06b6d4", "#f59e0b", "#10b981", "#ef4444
 
 html = '<section style="padding:10px 0;max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">\n'
 html += '<section style="text-align:center;padding:30px 16px 16px;">\n'
-html += '<h1 style="font-size:24px;font-weight:800;color:#1e293b;margin:0 0 8px;letter-spacing:1px;">\u4eba\u5de5\u667a\u80fd\u8d5a\u94b1\u65e5\u62a5</h1>\n'
+html += '<h1 style="font-size:24px;font-weight:800;color:#1e293b;margin:0 0 8px;letter-spacing:1px;">AI\u8d5a\u94b1\u65e5\u62a5</h1>\n'
 html += '<p style="font-size:13px;color:#94a3b8;margin:0;">' + today + ' \u5168\u7403\u4eba\u5de5\u667a\u80fd\u8d5a\u94b1\u65b0\u95fb</p>\n'
 html += '</section>\n'
 
 html += '<section style="text-align:center;padding:8px 16px 16px;">\n'
 html += '<span style="display:inline-block;background:#f1f5f9;border-radius:8px;padding:10px 24px;margin:4px 8px;"><b style="font-size:20px;color:#3b82f6;">' + str(total) + '</b><br><span style="font-size:11px;color:#94a3b8;">\u603b\u8ba1</span></span>\n'
-regions_count = len(set(r for _, _, r, *_ in items[:MAX_LIST_ITEMS]))
-html += '<span style="display:inline-block;background:#f1f5f9;border-radius:8px;padding:10px 24px;margin:4px 8px;"><b style="font-size:20px;color:#8b5cf6;">' + str(regions_count) + '</b><br><span style="font-size:11px;color:#94a3b8;">\u5730\u533a</span></span>\n'
 html += '</section>\n'
 
 for idx, (title, url, region_name, region_code, pubdate, _summary, source_name) in enumerate(items[:MAX_LIST_ITEMS]):
@@ -256,10 +254,10 @@ for idx, (title, url, region_name, region_code, pubdate, _summary, source_name) 
     html += '</section>\n'
 
 html += '<section style="text-align:center;padding:24px 16px;color:#cbd5e1;font-size:11px;">\n'
-html += '<p style="margin:0;">\u4eba\u5de5\u667a\u80fd\u8d5a\u94b1\u65e5\u62a5 \u00b7 \u65b0\u95fb\u805a\u5408\u63a5\u53e3 \u00b7 \u6bcf\u65e5\u66f4\u65b0</p>\n'
+html += '<p style="margin:0;">AI\u8d5a\u94b1\u65e5\u62a5 \u00b7 \u65b0\u95fb\u805a\u5408\u63a5\u53e3 \u00b7 \u6bcf\u65e5\u66f4\u65b0</p>\n'
 html += '</section>\n</section>'
 
-html = '<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>\u4eba\u5de5\u667a\u80fd\u8d5a\u94b1\u65e5\u62a5</title>\n</head>\n<body style="margin:0;padding:0;background:#fff;">\n' + html + '\n</body>\n</html>'
+html = '<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>AI\u8d5a\u94b1\u65e5\u62a5</title>\n</head>\n<body style="margin:0;padding:0;background:#fff;">\n' + html + '\n</body>\n</html>'
 
 stamp = sys.argv[1].replace("wechat_daily_", "") if len(sys.argv) > 1 else datetime.now().strftime("%Y%m%d_%H%M%S")
 with open(os.path.join(OUT, "wechat_daily_" + stamp + ".html"), "w", encoding="utf-8") as f:
@@ -270,8 +268,8 @@ index_name = "wechat_daily_" + stamp + ".html"
 index_html = (
     '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="UTF-8">\n'
     '<meta http-equiv="refresh" content="0;url=' + index_name + '">\n'
-    '<title>\u4eba\u5de5\u667a\u80fd\u8d5a\u94b1\u65e5\u62a5</title>\n</head>\n<body>\n'
-    '<p>\u6b63\u5728\u8df3\u8f6c\u5230\u4eba\u5de5\u667a\u80fd\u8d5a\u94b1\u65e5\u62a5... '
+    '<title>AI\u8d5a\u94b1\u65e5\u62a5</title>\n</head>\n<body>\n'
+    '<p>\u6b63\u5728\u8df3\u8f6c\u5230AI\u8d5a\u94b1\u65e5\u62a5... '
     '<a href="' + index_name + '">\u70b9\u6b64\u76f4\u63a5\u8fdb\u5165</a></p>\n</body>\n</html>\n'
 )
 with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
