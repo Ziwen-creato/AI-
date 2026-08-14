@@ -708,7 +708,7 @@ def localize_ordered_items(items):
             item['content'] = translate_display_text(item['content'])
     return items
 
-def gen_page_ordered(title, source_url, region, pubdate, ordered_items, en_text=''):
+def gen_page_ordered(title, source_url, region, pubdate, ordered_items, en_text='', content_notice=''):
     """Generate detail page with images at their original paragraph positions."""
     now = datetime.now().strftime('%Y-%m-%d %H:%M')
     pub_str = (pubdate or '')[:19]
@@ -739,6 +739,14 @@ def gen_page_ordered(title, source_url, region, pubdate, ordered_items, en_text=
     partial_notice = ''
     if en_text and len(en_text.strip()) < 200:
         partial_notice = '<p style="font-size:13px;color:#b45309;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:10px 12px;margin:16px 0;line-height:1.6;">该来源为付费内容，当前只能获取到开头，新闻正文不完整。</p>\n'
+
+    notice_html = ''
+    if content_notice:
+        notice_html = (
+            '<div style="margin:18px 0;padding:12px 14px;background:#fffbeb;'
+            'border-left:4px solid #f59e0b;color:#92400e;font-size:14px;line-height:1.7;">'
+            + escape(content_notice) + '</div>\n'
+        )
 
     en_section = ''
     if en_text and len(en_text.strip()) > 50:
@@ -771,7 +779,7 @@ def gen_page_ordered(title, source_url, region, pubdate, ordered_items, en_text=
         '<title>' + escape(title) + '</title>\n' + css + '\n</head>\n<body>\n<main>\n'
         '<h1>' + escape(title) + '</h1>\n'
         '<div class="meta"><span>' + region + '</span><span>' + pub_str + '</span><span>生成于 ' + now + '</span></div>\n'
-        + body_html + '\n' + partial_notice + en_section
+        + body_html + '\n' + partial_notice + notice_html + en_section
         + '<div class="source">原文来源：<a href="' + safe_url + '">查看原文</a></div>\n'
         '<a href="javascript:history.back()" class="back">&larr; 返回</a>\n</main>\n</body>\n</html>'
     )
@@ -830,6 +838,7 @@ def main():
         newsapi_img = (article.get('image_url') or '').lstrip(':').strip()
         newsapi_content = article.get('content', '')
         source_name = article.get('source_name', '')
+        content_notice = ''
 
         print('[' + str(idx+1) + '/' + str(total) + '] ' + display_title[:50] + '...')
 
@@ -846,6 +855,7 @@ def main():
 
         direct_images = list(all_imgs)
         direct_text_count = sum(1 for item in (ordered or []) if item.get('type') == 'text')
+        reader_used = False
         if not ordered or direct_text_count < 3 or len(en_text) < 700:
             reader_markdown = _fetch_jina_reader(source_url)
             reader_ordered, reader_images = _markdown_to_ordered(reader_markdown)
@@ -853,6 +863,7 @@ def main():
                 1 for item in reader_ordered if item.get('type') == 'text'
             )
             if reader_ordered and reader_text_count >= 2:
+                reader_used = True
                 if not reader_images and direct_images:
                     first_text = next(
                         (
@@ -880,6 +891,9 @@ def main():
                     + ' images'
                 )
 
+        if not reader_used and direct_text_count < 2 and len(en_text.strip()) < 300:
+            content_notice = '该文章来源设置了访问限制或付费墙，当前无法获取完整原文；以下内容为基于已有信息的自动生成摘要。'
+
         if not ordered or not any(o["type"] == "text" for o in ordered):
             print('  Using fallback layout')
             if direct_text_count == 0:
@@ -905,7 +919,7 @@ def main():
             merged = trim_incomplete_tail(merged)
             merged = localize_ordered_items(merged)
             print('  CN: ' + str(len(cn_text)) + ' chars, images kept in original order')
-            page = gen_page_ordered(display_title, source_url, rgn, pubdate, merged, en_text if en_text else '')
+            page = gen_page_ordered(display_title, source_url, rgn, pubdate, merged, en_text if en_text else '', content_notice)
         elif ordered:
             fallback_text = en_text.strip() if len(en_text.strip()) > 100 else desc
             fallback_paras = [p.strip() for p in fallback_text.split('\n\n') if p.strip()]
@@ -914,7 +928,7 @@ def main():
             merged = merge_translation_with_ordered(ordered, fallback_paras)
             merged = localize_ordered_items(merged)
             print('  LLM failed/fallback, images kept in original order')
-            page = gen_page_ordered(display_title, source_url, rgn, pubdate, merged, en_text if en_text else '')
+            page = gen_page_ordered(display_title, source_url, rgn, pubdate, merged, en_text if en_text else '', content_notice)
         elif cn_text and len(cn_text) > 20:
             # Fallback: no ordered content, use traditional layout
             cn_paras = [p.strip() for p in cn_text.split('\n\n') if p.strip()]
@@ -941,11 +955,11 @@ def main():
             if not img_ordered:
                 result_ordered = simple_ordered
             print('  CN: ' + str(len(cn_text)) + ' chars, interleaved layout')
-            page = gen_page_ordered(display_title, source_url, rgn, pubdate, result_ordered, en_text if en_text else '')
+            page = gen_page_ordered(display_title, source_url, rgn, pubdate, result_ordered, en_text if en_text else '', content_notice)
         else:
             print('  LLM failed, using description')
             simple = [{"type": "text", "content": desc if desc else display_title}]
-            page = gen_page_ordered(display_title, source_url, rgn, pubdate, simple, en_text if en_text else '')
+            page = gen_page_ordered(display_title, source_url, rgn, pubdate, simple, en_text if en_text else '', content_notice)
 
         detail_name = 'detail_' + format(idx, '03d') + '.html'
         with open(os.path.join(OUT, detail_name), 'w', encoding='utf-8') as f:
