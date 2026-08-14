@@ -21,7 +21,12 @@ SKIP_IMG = ['icon', 'logo', 'avatar', 'pixel', '1x1', 'spacer', 'tracking', 'ana
             '/ad/', '/ads/', '/banner/', '/leaderboard/', '/promo/', '/sponsor',
             'b2b3_', 'button336', 'btn_', '_ad_', 'advert', 'author', 'profile',
             'gravatar', 'emoji', 'smiley', 'placeholder', 'pixel.', 'loading.', 'spinner',
-            'gstatic.com', 'news.google.com', 'google_news']
+            'gstatic.com', 'news.google.com', 'google_news', '300x250', 'thumb',
+            'nav-ad', 'tiny-ad', 'hamburger', 'exit-intent', 'newsletter', '150x150',
+            'crop', 'gbr-standard', 'tax-resource', 'best-banks-26', 'untitled-design',
+            'image-phone-newsletter', 'dave-ramsey', 'mark-cuban', 'grant-cardone',
+            'laura-beck', 'financially-savvy', 'gen-z-the-future', 'best_banks_series',
+            'trc-non-spons-nav', 'retire-anywhere-nav-ad']
 
 NOISE_TOKENS = [
     'author', 'avatar', 'sidebar', 'widget', 'comment', 'footer', 'nav', 'header',
@@ -352,8 +357,9 @@ def _image_signature(src):
     m = re.search(r'msid-?(\d+)', src, re.I)
     if m:
         return ('msid', m.group(1))
-    path = src.split('?', 1)[0].rstrip('/')
-    path = re.sub(r'-\d+x\d+(?=\.[a-z0-9]+$)', '', path, flags=re.I)
+    path = urllib.parse.urlparse(src).path.rstrip('/').lower()
+    path = re.sub(r'-\d+x\d+(?:-\d+)?(?=\.[a-z0-9]+$)', '', path, flags=re.I)
+    path = re.sub(r'-(?:thumb|small|medium|large)(?=\.[a-z0-9]+$)', '', path, flags=re.I)
     return ('path', path)
 
 def _same_image(a, b):
